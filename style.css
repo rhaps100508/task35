@@ -1,0 +1,122 @@
+/* Mengatur gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container to hold the form and table with spacing */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Add space between form and table */
+}
+
+/* Mengatur gaya form */
+form {
+    background-color: #ffffff;
+    padding: 30px; /* Menambahkan lebih banyak ruang di dalam form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Gaya untuk input */
+form input[type="text"] {
+    width: 100%;
+    padding: 14px; /* Menambahkan ruang lebih pada input */
+    margin: 14px 0; /* Menambahkan margin atas dan bawah lebih besar */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Warna border saat input aktif */
+form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Gaya tombol */
+form button {
+    width: 100%;
+    padding: 14px; /* Menambahkan ruang lebih pada tombol */
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 15px; /* Menambahkan jeda antara input dan tombol */
+}
+
+/* Gaya tombol saat hover */
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya tombol saat disabled */
+form button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Gaya pesan error */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 20px; /* Menambahkan margin bawah lebih banyak */
+}
+
+/* Gaya tabel */
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menambahkan ruang pada header tabel */
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 20px; /* Menambahkan ruang lebih pada sel tabel */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Kolom nomor */
+table td:first-child, table th:first-child {
+    text-align: center;
+    width: 50px;
+}
+
+/* Gaya hover untuk baris tabel */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Gaya untuk judul */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px; /* Menambahkan jarak bawah lebih banyak untuk judul */
+    text-align: center;
+}
